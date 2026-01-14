@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFy - Alertas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Cabeçalho -->
+        <header class="cabecalho">
+            <div class="logo">
+                <img src="https://res.cloudinary.com/ddncyqgjd/image/upload/v1767381742/Picsart_26-01-02_16-20-45-326_pypyls.png" alt="TaskFy Logo" style="height: 32px; width: auto;">
+                <span>TaskFy</span>
+            </div>
+            <div class="topo-acoes">
+                <a href="carga.html" class="btn-secundario"><i class="fas fa-chart-pie"></i> Carga de Trabalho</a>
+                <div class="notificacoes">
+                    <i class="far fa-bell"></i>
+                    <span id="ponto-notificacao" class="ponto-notificacao"></span>
+                </div>
+                <div class="usuario">
+                    <img id="foto-usuario" src="" alt="Avatar">
+                    <span id="nome-usuario">Carregando...</span>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+            </div>
+        </header>
+
+        <div class="layout-principal">
+            <!-- Menu Lateral -->
+            <aside class="sidebar">
+                <div class="navegacao-voltar">
+                    <a href="home.html" class="link-voltar"><i class="fas fa-chevron-left"></i> Voltar para Agenda</a>
+                </div>
+                <h1 class="titulo-pagina">Notificações</h1>
+                <nav class="menu-nav">
+                    <a href="#" class="item-nav ativo"><i class="fas fa-bell"></i> Todas</a>
+                    <a href="#" class="item-nav"><i class="fas fa-archive"></i> Arquivadas</a>
+                </nav>
+                
+                <div class="legenda-status">
+                    <div class="legenda-item"><span class="circulo verde"></span> Concluído</div>
+                    <div class="legenda-item"><span class="circulo amarelo"></span> Atenção</div>
+                    <div class="legenda-item"><span class="circulo vermelho"></span> Urgente</div>
+                </div>
+            </aside>
+
+            <!-- Área de Conteúdo -->
+            <main class="conteudo">
+                <div class="controles-alertas">
+                    <div class="filtros-alertas">
+                        <button class="btn-filtro ativo">Todas</button>
+                        <button class="btn-filtro">Não lidas</button>
+                    </div>
+                    <button class="btn-texto" id="btn-arquivar-tudo">Arquivar Tudo <i class="fas fa-chevron-right"></i></button>
+                </div>
+
+                <!-- Lista de Alertas Dinâmica -->
+                <div class="container-alertas" id="lista-alertas">
+                    <!-- Gerado via JS -->
+                </div>
+
+                <div class="acoes-rodape-alertas">
+                    <button class="btn-primario-largo" id="btn-marcar-lidas">Marcar todas como lidas</button>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="alertas.js"></script>
+</body>
+</html>

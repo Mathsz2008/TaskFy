@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFy - Projetos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Cabeçalho -->
+        <header class="cabecalho">
+            <div class="logo">
+                <img src="https://res.cloudinary.com/ddncyqgjd/image/upload/v1767381742/Picsart_26-01-02_16-20-45-326_pypyls.png" alt="TaskFy Logo" style="height: 32px; width: auto;">
+                <span>TaskFy</span>
+            </div>
+            <div class="topo-acoes">
+                <a href="carga-trabalho.html" class="btn-secundario"><i class="fas fa-chart-pie"></i> Carga de Trabalho</a>
+                <div class="notificacoes">
+                    <i class="far fa-bell"></i>
+                    <span id="ponto-notificacao" class="ponto-notificacao"></span>
+                </div>
+                <div class="usuario">
+                    <img id="foto-usuario" src="" alt="Avatar">
+                    <span id="nome-usuario">Carregando...</span>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+            </div>
+        </header>
+
+        <div class="layout-principal">
+            <!-- Menu Lateral -->
+            <aside class="sidebar">
+                <div class="navegacao-voltar">
+                    <a href="home.html" class="link-voltar"><i class="fas fa-chevron-left"></i> Voltar para Agenda</a>
+                </div>
+                <h1 class="titulo-pagina">Projetos</h1>
+                <nav class="menu-nav">
+                    <a href="#" class="item-nav ativo"><i class="fas fa-project-diagram"></i> Todos os Projetos</a>
+                    <a href="#" class="item-nav"><i class="fas fa-star"></i> Favoritos</a>
+                    <a href="alertas.html" class="item-nav"><i class="fas fa-bell"></i> Alertas</a>
+                </nav>
+                
+                <div class="legenda-status">
+                    <div class="legenda-item"><span class="circulo verde"></span> No prazo</div>
+                    <div class="legenda-item"><span class="circulo amarelo"></span> Em risco</div>
+                    <div class="legenda-item"><span class="circulo vermelho"></span> Atrasado</div>
+                </div>
+            </aside>
+
+            <!-- Área de Conteúdo -->
+            <main class="conteudo">
+                <div class="controles-projetos">
+                    <div class="filtros-projetos">
+                        <button class="btn-filtro ativo">Ativos</button>
+                        <button class="btn-filtro">Concluídos</button>
+                    </div>
+                    <button class="btn-primario-pequeno"><i class="fas fa-plus"></i> Novo Projeto</button>
+                </div>
+
+                <!-- Grid de Projetos Dinâmico -->
+                <div class="grid-projetos" id="lista-projetos">
+                    <!-- Gerado via JS -->
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="projetos.js"></script>
+</body>
+</html>

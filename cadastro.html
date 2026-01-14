@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Usuário</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body class="body-cadastro">
+<div class="fundo"></div> <div class="fundo2"></div>
+  <!-- LADO ESQUERDO – IMAGEM + SLOGAN (60%) -->
+  <div class="esquerda">
+    <div class="logomarca">
+    <img src="https://res.cloudinary.com/ddncyqgjd/image/upload/v1767209124/Picsart_25-12-31_16-25-01-884_tilu6w.png" alt="Logo do TaskFy" class="logo">
+    <p class="nomeDoApp">TaskFy</p>
+    </div>
+    <h1 class="frase">Olá,<br><strong>seja bem-vindo!</strong></h1>
+    <p class="slogan">Confiem a nós a sua <br class="slResponsivo"><span class="slResponsivo"></span><strong>agenda de equipe</strong>!</span></p>
+  </div>
+
+  <!-- LADO DIREITO – CADASTRO (40%) -->
+  <div class="direita">
+    <h1 class="titulo-cadastro">Criar Conta</h1>
+    <form class="form-login" onsubmit="window.location.href='home.html'; return false;">
+
+      <input type="text" name="nome" placeholder="Digite seu nome" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" id="senha" name="senha" placeholder="Senha" required>
+      <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Confirme sua senha" required>
+
+      <p>Sua senha deve conter:</p>
+      <ul class="senha">
+        <li>8 a 16 caracteres</li>
+        <li>Pelo menos uma letra maiúscula</li>
+        <li>Pelo menos um número</li>
+      </ul>
+
+      <button type="submit" class="entrar">Concluir</button>
+      
+      <p class="concluir">Ao clicar em Concluir, você aceita nossos Termos de Uso e reconhece nossa Política de Privacidade.</p>
+      <ul class="termos">
+        <li class="termo">Termos</li>
+        <li class="termo">Privacidade</li>
+      </ul>
+    </form>
+    <p class="link">Já possui uma conta? <a href="login.html">Faça login</a></p>
+  </div>
+  <div class="espacinho"></div>
+</body>
+</html>

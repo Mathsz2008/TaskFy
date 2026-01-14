@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Usuário</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body class="body-cadastro">
+<div class="fundo"></div> <div class="fundo2"></div>
+  <!-- LADO ESQUERDO – IMAGEM + SLOGAN (60%) -->
+  <div class="esquerda">
+    <div class="logomarca">
+    <img src="https://res.cloudinary.com/ddncyqgjd/image/upload/v1767209124/Picsart_25-12-31_16-25-01-884_tilu6w.png" alt="Logo do TaskFy" class="logo">
+    <p class="nomeDoApp">TaskFy</p>
+    </div>
+    <h1 class="frase">Olá,<br><strong>bem-vindo de volta!</strong></h1>
+    <p class="slogan">Confiem a nós a sua <br class="slResponsivo"><span class="slResponsivo"></span><strong>agenda de equipe</strong>!</span></p>
+  </div>
+
+  <!-- LADO DIREITO – CADASTRO (40%) -->
+  <div class="direita">
+    <h1 class="titulo-login">Entrar no TaskFy</h1>
+    <form class="form-login" onsubmit="window.location.href='home.html'; return false;">
+
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" id="senha" name="senha" placeholder="Senha" required>
+      <p class="esqueceu"><a href="senha">Esqueceu sua senha?</a></p>
+      <button type="submit" class="entrar">Entrar</button>
+    </form>
+    <p class="link">Não possui uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+    <div class="espacinho"></div>
+  </div>
+</body>
+</html>

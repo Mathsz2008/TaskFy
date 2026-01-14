@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFy - Gestão de Tarefas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Cabeçalho -->
+        <header class="cabecalho">
+        <button id="btn-menu-mobile" class="btn-menu-mobile">
+        <i class="fas fa-bars"></i>
+    </button>
+            <div class="logo">
+                <img src="https://res.cloudinary.com/ddncyqgjd/image/upload/v1767381742/Picsart_26-01-02_16-20-45-326_pypyls.png" alt="TaskFy Logo" style="height: 32px; width: auto;">
+                <span>TaskFy</span>
+            </div>
+            <div class="topo-acoes">
+                <a href="carga.html" class="btn-secundario"><i class="fas fa-chart-pie"></i> Carga de Trabalho</a>
+                <div class="notificacoes">
+                    <i class="far fa-bell"></i>
+                    <span id="ponto-notificacao" class="ponto-notificacao"></span>
+                </div>
+                <div class="usuario">
+                    <img id="foto-usuario" src="" alt="Avatar">
+                    <span id="nome-usuario">Carregando...</span>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+            </div>
+        </header>
+
+        <div class="layout-principal">
+            <!-- Menu Lateral -->
+            <aside class="sidebar">
+                <h1 class="titulo-pagina">Agenda Semanal</h1>
+                <nav class="menu-nav">
+                    <a href="#" class="item-nav ativo"><i class="fas fa-tasks"></i> Minhas Tarefas</a>
+                    <a href="projetos.html" class="item-nav"><i class="fas fa-project-diagram"></i> Projetos</a>
+                    <a href="alertas.html" class="item-nav"><i class="fas fa-bell"></i> Alertas <span id="contador-alertas" class="contador">0</span></a>
+                </nav>
+                
+                <div class="legenda-status">
+                    <div class="legenda-item"><span class="circulo verde"></span> No prazo</div>
+                    <div class="legenda-item"><span class="circulo amarelo"></span> Em risco</div>
+                    <div class="legenda-item"><span class="circulo vermelho"></span> Atrasado</div>
+                </div>
+            </aside>
+
+            <!-- Área de Conteúdo -->
+            <main class="conteudo">
+                <div class="controles-calendario">
+                    <div class="seletor-periodo">
+                        <span class="label">Período:</span>
+                        <div class="periodo-atual" id="texto-periodo">22 Abr - 28 Abr 2024</div>
+                    </div>
+                    <div class="navegacao">
+                        <button id="btn-anterior" title="Semana Anterior"><i class="fas fa-chevron-left"></i></button>
+                        <button id="btn-proximo" title="Próxima Semana"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Barra de Dias da Semana -->
+                <div class="barra-dias" id="lista-dias">
+                    <!-- Gerado via JS -->
+                </div>
+
+                <!-- Lista de Tarefas Dinâmica -->
+                <div class="container-tarefas" id="lista-tarefas">
+                    <!-- Gerado via JS -->
+                </div>
+            </main>
+        </div>
+    </div>
+    <div id="overlay-menu" class="overlay-menu"></div>
+    <script src="home.js"></script>
+</body>
+</html>

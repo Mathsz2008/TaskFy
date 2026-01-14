@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFy - Carga de Trabalho</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Cabeçalho -->
+        <header class="cabecalho">
+            <div class="logo">
+                <img src="https://res.cloudinary.com/ddncyqgjd/image/upload/v1767381742/Picsart_26-01-02_16-20-45-326_pypyls.png" alt="TaskFy Logo" style="height: 32px; width: auto;">
+                <span>TaskFy</span>
+            </div>
+            <div class="topo-acoes">
+                <a href="home.html" class="btn-secundario"><i class="fas fa-calendar-alt"></i> Ver Agenda</a>
+                <div class="notificacoes">
+                    <i class="far fa-bell"></i>
+                    <span id="ponto-notificacao" class="ponto-notificacao"></span>
+                </div>
+                <div class="usuario">
+                    <img id="foto-usuario" src="" alt="Avatar">
+                    <span id="nome-usuario">Carregando...</span>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+            </div>
+        </header>
+
+        <div class="layout-principal">
+            <!-- Menu Lateral -->
+            <aside class="sidebar">
+                <div class="navegacao-voltar">
+                    <a href="home.html" class="link-voltar"><i class="fas fa-chevron-left"></i> Voltar para Agenda</a>
+                </div>
+                <h1 class="titulo-pagina">Carga de Trabalho</h1>
+                <nav class="menu-nav">
+                    <a href="#" class="item-nav ativo"><i class="fas fa-users"></i> Equipe</a>
+                    <a href="#" class="item-nav"><i class="fas fa-chart-line"></i> Relatórios</a>
+                </nav>
+                
+                <div class="legenda-status">
+                    <div class="legenda-item"><span class="circulo verde"></span> Carga balanceada</div>
+                    <div class="legenda-item"><span class="circulo amarelo"></span> Próximo ao limite</div>
+                    <div class="legenda-item"><span class="circulo vermelho"></span> Sobrecarga</div>
+                </div>
+            </aside>
+
+            <!-- Área de Conteúdo -->
+            <main class="conteudo">
+                <div class="controles-calendario">
+                    <div class="seletor-periodo">
+                        <span class="label">Semana Atual:</span>
+                        <div class="periodo-atual" id="texto-periodo">22 Abr - 28 Abr 2024</div>
+                    </div>
+                </div>
+
+                <!-- Tabela de Carga de Trabalho -->
+                <div class="bloco-tabela">
+                    <table class="tabela-carga">
+                        <thead>
+                            <tr>
+                                <th>Funcionário</th>
+                                <th>Horas Disponíveis</th>
+                                <th>Carga de Trabalho</th>
+                            </tr>
+                        </thead>
+                        <tbody id="corpo-tabela-carga">
+                            <!-- Gerado via JS -->
+                        </tbody>
+                    </table>
+                    
+                    <!-- Paginação -->
+                    <div class="rodape-tabela">
+                        <div class="itens-por-pagina">
+                            <select>
+                                <option>10 por página</option>
+                            </select>
+                        </div>
+                        <div class="paginacao">
+                            <button disabled><i class="fas fa-chevron-left"></i></button>
+                            <span class="pagina-atual">1</span>
+                            <button disabled><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="carga.js"></script>
+</body>
+</html>

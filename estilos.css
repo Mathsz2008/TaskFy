@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body-cadastro {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fundo2{
+  background: url("https://res.cloudinary.com/ddncyqgjd/image/upload/v1767129338/20251230_164558_0000_cdj0wd.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  z-index: -2;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.fundo{
+  background: url("https://res.cloudinary.com/ddncyqgjd/image/upload/v1767129338/20251230_164558_0000_cdj0wd.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  filter: blur(2px);
+  z-index: -1;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* ESQUERDA – 60% */
+.esquerda {
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.logomarca {
+  position: absolute;
+  top: 6vh;
+  left: 5vw;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.logo {
+  height: 8vh;
+  margin-right: 1vw;
+}
+
+.nomeDoApp {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 6vh;
+  font-weight: bold;
+}
+
+.frase {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 8vh;
+  line-height: 1.2;
+  text-align: left;
+  text-shadow: #0d769c 2px 2px 4px;
+  box-shadow: #1094c4 2px 2px 8px ;
+  padding: 3.5vh;
+  border-radius: 0.7vh;
+  margin: 0 5vw 0 5vw;
+}
+
+.slogan {
+  position: absolute;
+  top: 71vh;
+  left: 18vw;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 3.8vh;
+  text-align: left;
+  text-shadow: #0d769c 1px 1px 3px;
+  filter: drop-shadow(1px 1px 3px #0d769c);
+}
+
+/* DIREITA – 40% */
+.direita {
+  border-radius: 3vh 0 0 3vh;
+  width: 40%;
+  height: 100vh;
+  background-color: white;
+  box-shadow: 0 0 10px 0.3px rgb(4, 110, 151);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.direita form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.direita form p, .senha {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-items: left;
+}
+
+input {
+  background: none;
+  padding: 10px;
+  border-radius: 6px;
+  border: 2px solid rgb(13, 160, 218);
+  color: rgb(0, 65, 102);
+  margin: 0.6vh;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid rgb(54, 182, 233);
+  background: #f4fcff;
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+  font-size: 1rem;
+  box-sizing: border-box;
+  margin-top: 8px;
+}
+
+input[type="email"]::placeholder, input[type="password"]::placeholder,  input[type="text"]::placeholder {
+  font-size: 3vh;
+  color: rgb(0, 0, 0);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  opacity: 0.5;
+}
+
+.termos {
+  text-decoration: none;
+  margin-top: 1vh;
+  gap: 1.5vw;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.termos ul li {
+  margin-left: 0.5vh;
+  margin-right: 0.5vh;
+}
+
+.termos ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.termo {
+  text-decoration: underline;
+  cursor: pointer;
+  color:rgb(0, 203, 218)
+}
+button {
+  margin-top: 2vh;
+  letter-spacing: 1.5px;
+  padding: 10px;
+  border-radius: 4px;
+  background: #0babe6;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  border: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+button:hover {
+  background-color: #15b3ec;
+  color: white;
+  transition: 0.5s;
+  box-shadow: 0 0 7px 0.2px white;
+}
+
+p, .senha li {
+  margin-top: 0.5vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.senha {
+  display: flex;
+  flex-direction: column;
+  width: 22.5vw;
+  margin-bottom: 1vh;
+}
+
+input[type="email"], input[type="password"], input[type="text"], button{
+  width: 27vw; /* ajuste conforme necessário */
+}
+
+.concluir {
+  margin-top: 2vh;
+  font-size: 0.8rem;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.titulo-cadastro, .titulo-login {
+  font-family:sans-serif;
+  color: rgb(100, 191, 233);
+  letter-spacing: 1.1 px;
+  margin-bottom: 3.5vh;
+  font-size: 6vh;
+  margin: 0 2vw 0 2vw;
+  text-align: center;
+}
+
+.titulo-login {
+  margin-bottom: 6vh;
+}
+
+.link {
+  margin-top: 3.3vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(70, 70, 70);
+}
+
+.link a {
+  text-decoration: none;
+  color: rgb(45, 190, 226);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}
+
+.esqueceu {
+  margin: 1vh 0 5vh 2.6vw;
+  align-self: flex-start;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.esqueceu a {
+  text-decoration: none;
+  color: rgb(45, 190, 226);
+  cursor: pointer;
+}
+
+.esqueceu a:hover {
+  text-decoration: underline;
+}
+
+@keyframes orbitarFundo {
+  0% {
+    transform: translate(0, 0) scale(1.1);
+  }
+  25% {
+    transform: translate(-40px, 30px) scale(1.12);
+  }
+  50% {
+    transform: translate(30px, -40px) scale(1.14);
+  }
+  75% {
+    transform: translate(40px, 20px) scale(1.12);
+  }
+  100% {
+    transform: translate(0, 0) scale(1.1);
+  }
+}
+
+.fundo {
+  animation: orbitarFundo 55s infinite;
+}
+
+.slResponsivo {
+  display: none;
+}
+
+@media (max-width: 1063px) {
+
+  .slResponsivo {
+    display: inline;
+    margin-left: 7vw;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Layout geral */
+  .body-cadastro {
+    flex-direction: column;
+  }
+
+  /* ===== TOPO (antiga esquerda) ===== */
+  .esquerda {
+    width: 100%;
+    height: 12vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Esconde textos grandes */
+  .frase,.slogan {
+    display: none;
+  }
+
+  /* Logo centralizada no topo */
+  .logomarca {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    height: 6vh;
+  }
+
+  .nomeDoApp {
+    font-size: 4vh;
+  }
+
+  /* ===== FORMULÁRIO ===== */
+  .direita {
+    width: 100%;
+    height: 88vh;
+    border-radius: 3vh 3vh 0 0;
+    box-shadow: none;
+  }
+
+  .direita form {
+    width: 80%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  button {
+    width: 100%;
+  }
+
+  .direita form p {
+    width: 100%;
+  }
+
+  .senha {
+    width: 100%;
+    margin-left: 7vh;
+  }
+
+  .titulo-cadastro {
+    font-size: 4vh;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+  }
+
+   .espacinho {
+    padding-top: 10px;
+    width: 100%;
+    background: white;
+  }
+}
