@@ -1,7 +1,7 @@
 // 1. Dados do Usuário
 const dadosUsuario = {
-    nome: "Jader Abreu",
-    foto: "https://i1.rgstatic.net/ii/profile.image/684913976156168-1540307625967_Q512/Jader-Abreu-3.jpg",
+    nome: "Maria Silva",
+    foto: "https://res.cloudinary.com/dli8oh1un/image/upload/v1768859016/maria_mf3kf0.webp",
     notificacoes: 4
 };
 
